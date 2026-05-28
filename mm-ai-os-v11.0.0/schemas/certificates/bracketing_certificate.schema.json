@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "certificate_id",
+    "question_id",
+    "certificate_status",
+    "feasibility_check",
+    "infeasibility_check"
+  ],
+  "properties": {}
+}

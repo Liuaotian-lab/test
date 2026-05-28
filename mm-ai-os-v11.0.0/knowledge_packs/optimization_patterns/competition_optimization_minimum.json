@@ -1,0 +1,5 @@
+{
+  "pattern_id": "competition_optimization_minimum",
+  "required_components": ["baseline_feasible_solution", "competition_solver", "constraint_validation", "local_perturbation_check", "sensitivity_analysis"],
+  "recommended_components": ["multi_start", "solver_tournament", "bound_check", "red_team_review"]
+}

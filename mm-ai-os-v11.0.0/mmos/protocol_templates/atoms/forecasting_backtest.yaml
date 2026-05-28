@@ -1,0 +1,36 @@
+{
+  "atom_id": "forecasting_backtest",
+  "description": "forecasting and out-of-sample evaluation",
+  "required_solver_hooks": [
+    "fit_forecast",
+    "run_backtest"
+  ],
+  "required_validators": [
+    "backtest_validator",
+    "leakage_validator"
+  ],
+  "required_negative_tests": [
+    "train_test_leakage",
+    "no_backtest",
+    "future_data_used"
+  ],
+  "minimum_fidelity": "L2",
+  "claim_limit": "evaluated_best",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+fixture_id: smoke_complete
+purpose: Verify complete .agent + contracts + runtime flow.
+expected:
+  dirs:
+    - cases/fixture_smoke_complete/.agent
+    - cases/fixture_smoke_complete/contracts
+  files:
+    - cases/fixture_smoke_complete/.agent/task_cards/Q1_task_card.md
+    - cases/fixture_smoke_complete/contracts/questions/Q1/problem_spec.json
+    - cases/fixture_smoke_complete/results/Q1/outputs/solution_real.json

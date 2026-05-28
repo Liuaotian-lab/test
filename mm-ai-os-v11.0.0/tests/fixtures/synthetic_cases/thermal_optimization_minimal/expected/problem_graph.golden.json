@@ -1,0 +1,27 @@
+{
+  "case_id": "synthetic_thermal_minimal",
+  "questions": [
+    {
+      "question_id": "Q1",
+      "title": "根据观测数据建立设备温度预测模型，变量包括时间 t、加热功率 P、传送带速度 v 和环境温度 A；要求用热过程模型拟合温度 T(t)，在速度范围 0.5 到 2.0、最高温度不超过 250 摄氏度、终",
+      "required": true,
+      "type": "generic_optimization",
+      "source_span": {
+        "start": 88,
+        "end": 245,
+        "anchor": "问题1："
+      },
+      "source_excerpt": "问题1：根据观测数据建立设备温度预测模型，变量包括时间 t、加热功率 P、传送带速度 v 和环境温度 A；要求用热过程模型拟合温度 T(t)，在速度范围 0.5 到 2.0、最高温度不超过 250 摄氏度、终端温度达到 220 摄氏度的约束下，优化控制参数以最小化能耗，并给出残差验证、敏感性分析和鲁棒性结论。",
+      "extracted_requirements": {
+        "has_output_file_requirement": false,
+        "has_constraints": true,
+        "has_comparison": false,
+        "has_simulation_or_sampling": false
+      },
+      "status": "parsed"
+    }
+  ],
+  "question_count": 1,
+  "dependencies": [],
+  "parser_version": "v5.6.1-inline-question-longline-fix"
+}

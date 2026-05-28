@@ -1,0 +1,5 @@
+{
+  "pattern_id": "contest_paper_quality_minimum",
+  "required_sections": ["问题重述", "模型假设", "符号说明", "模型建立", "求解方法", "结果分析", "模型检验", "优缺点", "参考文献"],
+  "forbidden": ["unsupported_global_optimal", "untraced_key_numbers", "hidden_assumptions"]
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FinalProblemSignature",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "case_id",
+    "questions"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "understanding_mode": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "question_node.schema.json"
+      }
+    },
+    "validation_report": {
+      "type": "object"
+    },
+    "critic_report": {
+      "type": "object"
+    },
+    "gate_summary": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

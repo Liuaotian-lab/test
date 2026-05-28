@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SearchResult",
+  "type": "object",
+  "required": [
+    "source_id",
+    "title",
+    "query_id"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "doi": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "url_or_doi_or_identifier": {
+      "type": "string"
+    },
+    "snippet": {
+      "type": "string"
+    },
+    "abstract": {
+      "type": "string"
+    },
+    "identified_methods": {
+      "type": "array",
+      "items": {
+        "$ref": "identified_method.schema.json"
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "7.4.0",
+  "case_id": "__CASE_ID__",
+  "default_policy": "deny",
+  "allow_read": [
+    "data/**",
+    "workspace/**/official/**",
+    "workspace/**/reports/**",
+    "registry/**",
+    "contracts/**",
+    "engineering/**",
+    "results/**",
+    "reports/**",
+    "paper/official/**",
+    "paper/reports/**",
+    "context_packs/**"
+  ],
+  "allow_write": [
+    "workspace/**/candidate/**",
+    "paper/candidate/**",
+    ".agent/run_reports/**",
+    ".agent/task_cards/**"
+  ],
+  "deny_read": [".env", "*.key", "secrets/**"],
+  "deny_write": [
+    "workspace/**/official/**",
+    "final_outputs/**",
+    "package/**",
+    "paper/official/**",
+    "contracts/**",
+    "schemas/**",
+    "os_manifest.json",
+    "VERSION.txt",
+    ".env",
+    "*.key",
+    "secrets/**"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "atom_id": "unit_consistency",
+  "description": "unit and dimensional consistency",
+  "required_solver_hooks": [
+    "unit_normalize"
+  ],
+  "required_validators": [
+    "unit_validator"
+  ],
+  "required_negative_tests": [
+    "wrong_unit",
+    "angle_degree_radian_mix"
+  ],
+  "minimum_fidelity": "L1",
+  "claim_limit": "approximate",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  }
+}

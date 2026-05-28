@@ -1,0 +1,7 @@
+{
+  "case_id": "__CASE_ID__",
+  "required_submission_files": [],
+  "package_manifest_required": true,
+  "sha256_required": true,
+  "output_validation_required": true
+}

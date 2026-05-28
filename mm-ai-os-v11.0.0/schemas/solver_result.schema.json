@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MM-AI OS Solver Result",
+  "type": "object",
+  "required": [
+    "question_id",
+    "status",
+    "quality_level",
+    "diagnostics"
+  ],
+  "properties": {
+    "question_id": {
+      "type": "string"
+    },
+    "solver_name": {
+      "type": "string"
+    },
+    "solver_version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "success",
+        "ok",
+        "partial",
+        "failed",
+        "timeout"
+      ]
+    },
+    "quality_level": {
+      "enum": [
+        "global_optimal",
+        "certified_optimal",
+        "exhaustive_best",
+        "local_optimal",
+        "heuristic_feasible",
+        "evaluated_best",
+        "simulation_estimate",
+        "approximate",
+        "exploratory",
+        "failed"
+      ]
+    },
+    "objective_value": {},
+    "objective_unit": {
+      "type": "string"
+    },
+    "runtime_seconds": {
+      "type": "number"
+    },
+    "diagnostics": {
+      "type": "object"
+    }
+  }
+}

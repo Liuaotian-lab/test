@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mm-ai-os.local/schemas/solver/solver_verify_report.schema.json",
+  "title": "Solver Verify Report",
+  "type": "object",
+  "required": ["gate", "status", "failures", "warnings", "result_path"],
+  "properties": {
+    "gate": {"const": "solver-verify"},
+    "status": {"enum": ["passed", "warning", "failed"]},
+    "failures": {"type": "array"},
+    "warnings": {"type": "array"},
+    "result_path": {"type": "string"},
+    "strict": {"type": "boolean"},
+    "schema": {"type": "object"}
+  },
+  "additionalProperties": true
+}

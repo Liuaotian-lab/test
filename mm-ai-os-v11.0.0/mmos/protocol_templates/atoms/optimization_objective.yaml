@@ -1,0 +1,39 @@
+{
+  "atom_id": "optimization_objective",
+  "description": "objective function optimization",
+  "required_solver_hooks": [
+    "evaluate_objective",
+    "search_candidates"
+  ],
+  "required_validators": [
+    "objective_validator",
+    "feasibility_validator"
+  ],
+  "required_negative_tests": [
+    "wrong_objective",
+    "infeasible_solution",
+    "false_global_optimal"
+  ],
+  "minimum_fidelity": "L2",
+  "claim_limit": "evaluated_best",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  },
+  "required_certificates": [
+    "candidate_search_certificate"
+  ]
+}

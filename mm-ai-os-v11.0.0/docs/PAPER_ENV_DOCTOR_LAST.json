@@ -1,0 +1,35 @@
+{
+  "command": "paper-env-doctor",
+  "status": "ready",
+  "compile_mode": "latexmk_xelatex",
+  "checks": {
+    "xelatex": {
+      "available": true,
+      "path": "/usr/bin/xelatex",
+      "version": "XeTeX 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian)",
+      "required_for_pdf": true
+    },
+    "latexmk": {
+      "available": true,
+      "path": "/usr/bin/latexmk",
+      "version": "Latexmk, John Collins, 11 Dec. 2024. Version 4.86",
+      "required_for_pdf": false
+    },
+    "pdftotext": {
+      "available": true,
+      "path": "/usr/bin/pdftotext",
+      "version": "pdftotext version 25.06.0",
+      "required_for_pdf_text_check": true
+    },
+    "tectonic": {
+      "available": false,
+      "path": null,
+      "version": null,
+      "required_for_pdf": false
+    }
+  },
+  "blockers": [],
+  "warnings": [],
+  "policy": "Contest paper packaging requires a generated TeX source, successful PDF compile, and searchable text verification.",
+  "generated_at": "2026-05-23T13:18:30.571712+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResearchCoverageReport",
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "gaps": {
+      "type": "array"
+    },
+    "gap_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "coverage": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,31 @@
+{
+  "template_id": "statistics",
+  "version": "7.1.0",
+  "description": "Search strategy for statistical decision and evaluation problems.",
+  "domain": "statistical_decision",
+  "search_engines": ["web_search", "web_fetch"],
+  "query_strategy": {
+    "model_search": [
+      "multi-criteria decision analysis MCDA mathematical framework",
+      "statistical indicator construction normalization weighting method",
+      "entropy weight method objective weighting mathematical formulation"
+    ],
+    "method_search": [
+      "TOPSIS technique order preference similarity ideal solution",
+      "AHP analytic hierarchy process pairwise comparison eigenvector",
+      "principal component analysis dimensionality reduction evaluation",
+      "gray relational analysis comprehensive evaluation method"
+    ],
+    "validation_search": [
+      "MCDA method comparison sensitivity weight perturbation",
+      "rank reversal analysis decision matrix robustness",
+      "statistical indicator reliability Cronbach alpha"
+    ]
+  },
+  "authoritative_sources": [
+    "Saaty The Analytic Hierarchy Process",
+    "Hwang and Yoon Multiple Attribute Decision Making",
+    "European Journal of Operational Research",
+    "Journal of Multi-Criteria Decision Analysis"
+  ]
+}

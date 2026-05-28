@@ -1,0 +1,5 @@
+{
+  "required_fields": ["protocol_id", "case_id", "protocol_version", "generated_from", "questions"],
+  "question_required_fields": ["objective_summary", "matched_capability_atoms", "required_model_components", "required_certificates", "output_requirements", "risk_flags"],
+  "component_required_fields": ["component_id", "minimum_fidelity", "required_solver_hooks", "required_validators", "required_negative_tests", "claim_limits"]
+}

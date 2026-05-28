@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": [
+    "status",
+    "questions"
+  ],
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "array"
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "status": "passed",
+  "case_id": "selftest_agent_boot",
+  "case_dir": "/mnt/data/mm_ai_os_repo/mm-ai-os-v10.0.0-constraint-certified-modeling-stable/cases/selftest_agent_boot",
+  "budget": "fast",
+  "duration_sec": 8.165,
+  "missing": [],
+  "steps": [
+    {
+      "name": "ingest-documents",
+      "status": "ok",
+      "duration_sec": 0.003,
+      "error": null,
+      "result_status": null
+    },
+    {
+      "name": "problem-parse",
+      "status": "ok",
+      "duration_sec": 0.006,
+      "error": null,
+      "result_status": null
+    },
+    {
+      "name": "problem-signature-extract",
+      "status": "ok",
+      "duration_sec": 0.024,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "academic-search",
+      "status": "ok",
+      "duration_sec": 0.006,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "question-activate",
+      "status": "ok",
+      "duration_sec": 0.033,
+      "error": null,
+      "result_status": "ok"
+    },
+    {
+      "name": "contract-check",
+      "status": "ok",
+      "duration_sec": 0.004,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "missing-info-check",
+      "status": "ok",
+      "duration_sec": 0.001,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "method-candidates",
+      "status": "ok",
+      "duration_sec": 0.003,
+      "error": null,
+      "result_status": "ok"
+    },
+    {
+      "name": "question-run-flow",
+      "status": "ok",
+      "duration_sec": 7.847,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "solver-verify",
+      "status": "ok",
+      "duration_sec": 0.001,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "output-discover",
+      "status": "ok",
+      "duration_sec": 0.006,
+      "error": null,
+      "result_status": null
+    },
+    {
+      "name": "output-register-draft",
+      "status": "ok",
+      "duration_sec": 0.001,
+      "error": null,
+      "result_status": "ok"
+    },
+    {
+      "name": "output-build",
+      "status": "ok",
+      "duration_sec": 0.008,
+      "error": null,
+      "result_status": "ok"
+    },
+    {
+      "name": "output-validate",
+      "status": "ok",
+      "duration_sec": 0.006,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "report-consistency-check",
+      "status": "ok",
+      "duration_sec": 0.003,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "model-maturity-check",
+      "status": "ok",
+      "duration_sec": 0.005,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "solver-tournament",
+      "status": "ok",
+      "duration_sec": 0.004,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "independent-verify",
+      "status": "ok",
+      "duration_sec": 0.003,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "bound-check",
+      "status": "ok",
+      "duration_sec": 0.002,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "sensitivity-analysis",
+      "status": "ok",
+      "duration_sec": 0.002,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "red-team-review",
+      "status": "ok",
+      "duration_sec": 0.003,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "convergence-check",
+      "status": "ok",
+      "duration_sec": 0.002,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "baseline-protocol-check",
+      "status": "ok",
+      "duration_sec": 0.002,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "optimism-risk-check",
+      "status": "ok",
+      "duration_sec": 0.004,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "optimism-debt-report",
+      "status": "ok",
+      "duration_sec": 0.001,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "solution-improve",
+      "status": "ok",
+      "duration_sec": 0.003,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "evidence-pack",
+      "status": "ok",
+      "duration_sec": 0.007,
+      "error": null,
+      "result_status": "ok"
+    },
+    {
+      "name": "quality-oracle",
+      "status": "ok",
+      "duration_sec": 0.005,
+      "error": null,
+      "result_status": "passed"
+    },
+    {
+      "name": "package-case",
+      "status": "ok",
+      "duration_sec": 0.108,
+      "error": null,
+      "result_status": "ok"
+    }
+  ],
+  "run_dir": "/mnt/data/mm_ai_os_repo/mm-ai-os-v10.0.0-constraint-certified-modeling-stable/cases/selftest_agent_boot/runs/20260528T101426.701365_0000_829bee"
+}

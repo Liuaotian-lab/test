@@ -1,0 +1,8 @@
+{
+  "case_id": "__CASE_ID__",
+  "question_id": "__QUESTION__",
+  "outputs": [
+    {"id": "solution_real", "path": "results/__QUESTION__/outputs/solution_real.json", "type": "json", "required": true}
+  ],
+  "required_outputs": ["solution_real"]
+}

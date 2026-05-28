@@ -1,0 +1,25 @@
+{
+  "template_id": "stochastic_simulation",
+  "version": "7.1.0",
+  "description": "Search strategy for stochastic simulation and Monte Carlo problems.",
+  "domain": "stochastic_simulation",
+  "search_engines": ["web_search", "web_fetch"],
+  "query_strategy": {
+    "model_search": [
+      "stochastic process mathematical model random variable probability distribution",
+      "Monte Carlo simulation method uncertainty quantification convergence",
+      "Markov chain Monte Carlo MCMC Metropolis-Hastings algorithm"
+    ],
+    "method_search": [
+      "Latin hypercube sampling variance reduction Monte Carlo",
+      "bootstrap resampling confidence interval estimation",
+      "Kolmogorov-Smirnov test distribution fitting goodness of fit"
+    ]
+  },
+  "authoritative_sources": [
+    "Robert and Casella Monte Carlo Statistical Methods",
+    "Ross Simulation",
+    "Journal of Computational and Graphical Statistics",
+    "Annals of Statistics"
+  ]
+}

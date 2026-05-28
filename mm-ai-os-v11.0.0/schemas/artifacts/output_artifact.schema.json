@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OutputArtifact",
+  "type": "object",
+  "required": [
+    "path"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "question_id": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

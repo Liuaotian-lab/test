@@ -1,0 +1,20 @@
+{
+  "question_id": "__QUESTION__",
+  "problem_classification": "unknown",
+  "preferred_solver": null,
+  "fallback_solver": null,
+  "silent_fallback_forbidden": true,
+  "budget_modes": {
+    "fast": {
+      "timeout_sec": 60
+    },
+    "regression": {
+      "timeout_sec": 300
+    },
+    "full": {
+      "timeout_sec": 3600
+    }
+  },
+  "memory_budget_gb": null,
+  "notes": []
+}

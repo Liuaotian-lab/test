@@ -1,0 +1,1 @@
+{"version":"8.0.0","codename":"agent-runtime-stable","case_format":"7.x-compatible","major_changes":["workflow state machine","agent runtime reports","permission policy","budget manager","MCP permission checks","audit log"]}

@@ -1,0 +1,15 @@
+{
+  "question_id": "__QUESTION__",
+  "required_sections": [
+    "问题重述",
+    "模型假设",
+    "符号说明",
+    "模型建立",
+    "求解方法",
+    "结果分析",
+    "误差与敏感性",
+    "优缺点"
+  ],
+  "numeric_consistency_required": true,
+  "quality_disclosure_required": true
+}

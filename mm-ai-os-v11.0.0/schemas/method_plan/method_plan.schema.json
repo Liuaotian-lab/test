@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MethodPlan",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "question_id"
+      ],
+      "properties": {
+        "question_id": {
+          "type": "string"
+        },
+        "primary_model": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "alternative_models": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "optimization_method": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "verification_approach": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "literature_references": {
+          "type": "array",
+          "items": {
+            "$ref": "../academic_research/citation.schema.json"
+          }
+        },
+        "citation_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "method_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "approval_status": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    {
+      "type": "object",
+      "required": [
+        "status",
+        "plans"
+      ],
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "case_id": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "question_id"
+            ],
+            "properties": {
+              "question_id": {
+                "type": "string"
+              },
+              "primary_model": {
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "alternative_models": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "optimization_method": {
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "verification_approach": {
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "literature_references": {
+                "type": "array",
+                "items": {
+                  "$ref": "../academic_research/citation.schema.json"
+                }
+              },
+              "citation_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "method_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "approval_status": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "uncited_claims": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  ]
+}

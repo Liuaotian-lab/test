@@ -1,0 +1,14 @@
+{
+  "version": "7.4.0",
+  "case_id": "__CASE_ID__",
+  "agent_rules": {
+    "read_task_card_first": true,
+    "write_only_to_allowed_paths": true,
+    "raw_data_read_only": true,
+    "contracts_read_only_after_complete": true,
+    "run_solver_through_runtime": true,
+    "record_manual_interventions": true,
+    "use_academic_research_engine": true,
+    "legacy_capability_system_forbidden": true
+  }
+}

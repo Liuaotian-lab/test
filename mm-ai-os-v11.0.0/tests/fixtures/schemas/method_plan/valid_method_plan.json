@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "case_id": "fixture_case",
+  "plans": {
+    "Q1": {
+      "question_id": "Q1",
+      "primary_model": {
+        "method_name": "heat-transfer calibration",
+        "role": "model"
+      },
+      "alternative_models": [],
+      "optimization_method": null,
+      "verification_approach": null,
+      "literature_references": [
+        {
+          "title": "Thermal process modeling",
+          "url": "https://example.invalid/source"
+        }
+      ],
+      "citation_count": 1,
+      "method_count": 1
+    }
+  },
+  "uncited_claims": []
+}

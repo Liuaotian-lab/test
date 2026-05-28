@@ -1,0 +1,33 @@
+{
+  "schema_version": "7.4.0",
+  "case_id": "fixture_case",
+  "status": "passed",
+  "mode": "schema_fixture",
+  "questions": {
+    "Q1": {
+      "question_id": "Q1",
+      "goal": {
+        "claim": "Predict system temperature and optimize a control parameter.",
+        "claim_type": "inference",
+        "evidence_ids": ["EVID-Q1-0001"],
+        "confidence": 0.7
+      },
+      "domain_family": {
+        "primary": "physical_process.thermal_process",
+        "confidence": 0.7,
+        "evidence_ids": ["EVID-Q1-0001"]
+      },
+      "task_archetypes": [
+        {
+          "task": "constrained_optimization",
+          "confidence": 0.7,
+          "evidence_ids": ["EVID-Q1-0001"]
+        }
+      ],
+      "variables": [],
+      "constraints": [],
+      "required_outputs": [],
+      "source_evidence_ids": ["EVID-Q1-0001"]
+    }
+  }
+}

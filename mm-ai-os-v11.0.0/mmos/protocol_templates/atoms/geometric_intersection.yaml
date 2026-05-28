@@ -1,0 +1,35 @@
+{
+  "atom_id": "geometric_intersection",
+  "description": "intersection, collision, coverage or overlap geometry",
+  "required_solver_hooks": [
+    "compute_intersection",
+    "compute_overlap"
+  ],
+  "required_validators": [
+    "intersection_validator",
+    "overlap_validator"
+  ],
+  "required_negative_tests": [
+    "intersection_missed",
+    "collision_missed"
+  ],
+  "minimum_fidelity": "L2",
+  "claim_limit": "evaluated_best",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  }
+}

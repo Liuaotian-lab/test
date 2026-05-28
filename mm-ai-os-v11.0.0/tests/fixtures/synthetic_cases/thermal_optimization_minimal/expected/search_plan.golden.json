@@ -1,0 +1,296 @@
+{
+  "schema_version": "7.5.0",
+  "status": "passed",
+  "case_id": "synthetic_thermal_minimal",
+  "mode": "planned_search_with_agent_populated_results",
+  "understanding_gate_status": "passed",
+  "searches": [
+    {
+      "question_id": "Q1",
+      "status": "fixture_results_injected",
+      "queries": [
+        {
+          "query_id": "Q1.domain_model.001",
+          "query": "reflow soldering thermal profile heat transfer mathematical model",
+          "purpose": "domain_model",
+          "reason": "Domain query for physical_process.thermal_process.",
+          "priority": 0.9,
+          "required": true,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.solver.007",
+          "query": "constrained optimization numerical methods feasibility sensitivity analysis",
+          "purpose": "solver",
+          "reason": "Optimization task requires solver and feasibility evidence.",
+          "priority": 0.86,
+          "required": true,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.constraint_handling.008",
+          "query": "constraint handling mathematical modeling penalty method interior point SLSQP",
+          "purpose": "constraint_handling",
+          "reason": "Optimization task requires constraint handling evidence.",
+          "priority": 0.84,
+          "required": true,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.method_algorithm.004",
+          "query": "time series prediction regression forecasting model validation",
+          "purpose": "method_algorithm",
+          "reason": "Prediction task requires predictive modeling methods.",
+          "priority": 0.82,
+          "required": true,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.constraint_handling.010",
+          "query": "要求用热过程模型拟合温度 T(t)，在速度范围 0.5 到 2.0、最高温度不超过 250 摄氏度、终 问题1：根据观测数据建立设备温度预测模型，变量包括时间 t、加热功率 P、传送带速度 v 和环境温度 A 要求用热过程模型拟合温度 T(t)，在速度范围 0.5 到 2.0、最高温度不超过 250 摄氏度、终端温度达到 220 摄氏度的约束下，优化控制参数以最小化能耗，并给出残差验证、敏感性分析和鲁棒性结论 constrained optimization modeling method",
+          "purpose": "constraint_handling",
+          "reason": "Explicit constraints require constraint-handling search.",
+          "priority": 0.82,
+          "required": true,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.method_algorithm.002",
+          "query": "thermal process parameter estimation inverse problem optimization",
+          "purpose": "method_algorithm",
+          "reason": "Domain query for physical_process.thermal_process.",
+          "priority": 0.78,
+          "required": false,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.verification.005",
+          "query": "prediction model validation error metrics residual analysis",
+          "purpose": "verification",
+          "reason": "Prediction task requires validation metrics.",
+          "priority": 0.78,
+          "required": true,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.method_algorithm.006",
+          "query": "parameter estimation inverse problem nonlinear least squares calibration",
+          "purpose": "method_algorithm",
+          "reason": "Parameter estimation task requires fitting and inverse method evidence.",
+          "priority": 0.78,
+          "required": true,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.verification.003",
+          "query": "heat transfer model validation residual sensitivity analysis",
+          "purpose": "verification",
+          "reason": "Domain query for physical_process.thermal_process.",
+          "priority": 0.68,
+          "required": false,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.domain_model.009",
+          "query": "temperature time velocity power governing equation mathematical model",
+          "purpose": "domain_model",
+          "reason": "Physical quantities suggest governing-equation search.",
+          "priority": 0.66,
+          "required": false,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.verification.011",
+          "query": "mathematical modeling validation sensitivity analysis robustness check",
+          "purpose": "verification",
+          "reason": "Every method plan needs validation and robustness evidence.",
+          "priority": 0.62,
+          "required": true,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        },
+        {
+          "query_id": "Q1.application_case.012",
+          "query": "physical process thermal process mathematical modeling application case",
+          "purpose": "application_case",
+          "reason": "Application cases help calibrate modeling assumptions.",
+          "priority": 0.48,
+          "required": false,
+          "evidence_ids": [
+            "EVID-Q1-0001",
+            "EVID-GLOBAL-0001",
+            "EVID-GLOBAL-0002"
+          ]
+        }
+      ],
+      "total_queries": 12,
+      "requires_optimization": true,
+      "results": [
+        {
+          "source_id": "SRC-Q1-THERMAL-001",
+          "query_id": "Q1.domain_model.001",
+          "title": "Lumped-parameter heat transfer models for thermal process control",
+          "url": "https://example.org/synthetic/thermal-lumped-model",
+          "snippet": "Lumped thermal capacitance models support temperature prediction, parameter calibration and residual validation in controlled heating processes.",
+          "identified_methods": [
+            {
+              "method_name": "lumped_parameter_heat_transfer_model",
+              "name": "lumped_parameter_heat_transfer_model",
+              "role": "primary_model",
+              "description": "Models device temperature as a first-order thermal process driven by heating power and loss to ambient air.",
+              "evidence_span": "Models device temperature as a first-order thermal process driven by heating power and loss to ambient air.",
+              "relevance_score": 0.94,
+              "source_title": "Lumped-parameter heat transfer models for thermal process control",
+              "source_url": "https://example.org/synthetic/thermal-lumped-model",
+              "source_snippet": "Models device temperature as a first-order thermal process driven by heating power and loss to ambient air."
+            },
+            {
+              "method_name": "nonlinear_least_squares_parameter_estimation",
+              "name": "nonlinear_least_squares_parameter_estimation",
+              "role": "model",
+              "description": "Fits thermal resistance and capacitance parameters by minimizing residual errors against observations.",
+              "evidence_span": "Fits thermal resistance and capacitance parameters by minimizing residual errors against observations.",
+              "relevance_score": 0.88,
+              "source_title": "Lumped-parameter heat transfer models for thermal process control",
+              "source_url": "https://example.org/synthetic/thermal-lumped-model",
+              "source_snippet": "Fits thermal resistance and capacitance parameters by minimizing residual errors against observations."
+            }
+          ]
+        },
+        {
+          "source_id": "SRC-Q1-OPT-002",
+          "query_id": "Q1.solver.007",
+          "title": "Constrained numerical optimization for process parameter tuning",
+          "url": "https://example.org/synthetic/constrained-process-optimization",
+          "snippet": "Sequential quadratic programming and grid-refined feasible search are standard approaches for bounded process optimization with temperature constraints.",
+          "identified_methods": [
+            {
+              "method_name": "grid_refined_feasible_search",
+              "name": "grid_refined_feasible_search",
+              "role": "model",
+              "description": "Uses a bounded grid to cross-check feasible control settings and provide a robust alternative model family.",
+              "evidence_span": "Uses a bounded grid to cross-check feasible control settings and provide a robust alternative model family.",
+              "relevance_score": 0.83,
+              "source_title": "Constrained numerical optimization for process parameter tuning",
+              "source_url": "https://example.org/synthetic/constrained-process-optimization",
+              "source_snippet": "Uses a bounded grid to cross-check feasible control settings and provide a robust alternative model family."
+            },
+            {
+              "method_name": "sequential_quadratic_programming",
+              "name": "sequential_quadratic_programming",
+              "role": "optimization",
+              "description": "Solves the bounded energy minimization problem while enforcing terminal temperature and maximum temperature constraints.",
+              "evidence_span": "Solves the bounded energy minimization problem while enforcing terminal temperature and maximum temperature constraints.",
+              "relevance_score": 0.91,
+              "source_title": "Constrained numerical optimization for process parameter tuning",
+              "source_url": "https://example.org/synthetic/constrained-process-optimization",
+              "source_snippet": "Solves the bounded energy minimization problem while enforcing terminal temperature and maximum temperature constraints."
+            }
+          ]
+        },
+        {
+          "source_id": "SRC-Q1-VALID-003",
+          "query_id": "Q1.constraint_handling.008",
+          "title": "Residual validation and sensitivity analysis for thermal prediction models",
+          "url": "https://example.org/synthetic/thermal-validation-sensitivity",
+          "snippet": "Residual MAE, terminal-temperature error, perturbation sensitivity and independent reduced-model checks are useful validation evidence for thermal modeling.",
+          "identified_methods": [
+            {
+              "method_name": "piecewise_linear_response_model",
+              "name": "piecewise_linear_response_model",
+              "role": "model",
+              "description": "Provides an interpretable alternative prediction model for tournament comparison.",
+              "evidence_span": "Provides an interpretable alternative prediction model for tournament comparison.",
+              "relevance_score": 0.81,
+              "source_title": "Residual validation and sensitivity analysis for thermal prediction models",
+              "source_url": "https://example.org/synthetic/thermal-validation-sensitivity",
+              "source_snippet": "Provides an interpretable alternative prediction model for tournament comparison."
+            },
+            {
+              "method_name": "residual_and_sensitivity_validation",
+              "name": "residual_and_sensitivity_validation",
+              "role": "verification",
+              "description": "Checks residual error, terminal-temperature agreement and parameter perturbation robustness.",
+              "evidence_span": "Checks residual error, terminal-temperature agreement and parameter perturbation robustness.",
+              "relevance_score": 0.93,
+              "source_title": "Residual validation and sensitivity analysis for thermal prediction models",
+              "source_url": "https://example.org/synthetic/thermal-validation-sensitivity",
+              "source_snippet": "Checks residual error, terminal-temperature agreement and parameter perturbation robustness."
+            }
+          ]
+        }
+      ],
+      "result_schema_hint": {
+        "required_fields": [
+          "source_id",
+          "title",
+          "url_or_doi_or_identifier",
+          "snippet",
+          "query_id",
+          "identified_methods"
+        ],
+        "identified_method_required_fields": [
+          "method_name",
+          "role",
+          "evidence_span",
+          "relevance_score"
+        ]
+      },
+      "note": "Agent or external search executor must execute queries and populate results; this planner never fabricates sources.",
+      "fixture_note": "Deterministic v7.5 synthetic search results; not real literature search."
+    }
+  ],
+  "search_count": 1,
+  "failure_count": 0,
+  "agent_execution_contract": {
+    "must_execute_queries": true,
+    "must_preserve_query_id": true,
+    "must_populate_results_with_sources": true,
+    "must_extract_identified_methods_with_evidence_span": true,
+    "no_fallback_to_self_knowledge": true
+  },
+  "fixture": "thermal_optimization_minimal"
+}

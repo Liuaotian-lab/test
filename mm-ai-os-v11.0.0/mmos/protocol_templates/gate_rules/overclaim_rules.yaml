@@ -1,0 +1,3 @@
+{
+  "forbidden_without_certificate": ["global_optimal", "certified_optimal", "最大", "最小", "最优"]
+}

@@ -1,0 +1,21 @@
+{
+  "rubric": "default_first_prize_readiness",
+  "dimensions": {
+    "problem_understanding": 10,
+    "model_soundness": 15,
+    "innovation": 10,
+    "solution_quality": 15,
+    "validation_strength": 15,
+    "robustness": 10,
+    "result_interpretability": 8,
+    "paper_quality": 10,
+    "figure_quality": 5,
+    "submission_integrity": 2
+  },
+  "caps": [
+    {"condition": "no independent verifier", "max_grade": "B"},
+    {"condition": "no advanced model", "max_grade": "B"},
+    {"condition": "paper strict check failed", "max_grade": "C"},
+    {"condition": "final gate failed", "max_grade": "D"}
+  ]
+}

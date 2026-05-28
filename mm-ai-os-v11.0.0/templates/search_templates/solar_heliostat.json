@@ -1,0 +1,29 @@
+{
+  "template_id": "solar_heliostat",
+  "version": "7.1.0",
+  "description": "Search strategy for solar heliostat field optimization problems.",
+  "domain": "solar_optical.heliostat_field",
+  "search_engines": ["web_search", "web_fetch"],
+  "query_strategy": {
+    "model_search": [
+      "heliostat field optical efficiency mathematical model cosine atmospheric attenuation",
+      "solar tower receiver flux distribution ray tracing model",
+      "heliostat mirror reflection sun vector tracking model"
+    ],
+    "method_search": [
+      "Monte Carlo ray tracing heliostat field optical simulation",
+      "particle swarm optimization heliostat field layout",
+      "gradient descent mirror aiming optimization receiver flux"
+    ],
+    "validation_search": [
+      "heliostat field annual optical efficiency calculation method",
+      "solar power tower performance metric LCOE optimization"
+    ]
+  },
+  "authoritative_sources": [
+    "Solar Energy (journal)",
+    "Renewable Energy (journal)",
+    "SolarPACES conference proceedings",
+    "Journal of Solar Energy Engineering ASME"
+  ]
+}

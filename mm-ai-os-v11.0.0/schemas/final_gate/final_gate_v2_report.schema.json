@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "status",
+    "artifact_gate",
+    "validity_gate",
+    "trust_gate"
+  ],
+  "properties": {}
+}

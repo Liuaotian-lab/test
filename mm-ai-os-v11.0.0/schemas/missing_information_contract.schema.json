@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "question_id",
+    "missing_items"
+  ],
+  "properties": {
+    "question_id": {
+      "type": "string"
+    },
+    "missing_items": {
+      "type": "array"
+    },
+    "allowed_to_output_numeric_answer": {
+      "type": "boolean"
+    },
+    "disclosure_required": {
+      "type": "boolean"
+    }
+  }
+}

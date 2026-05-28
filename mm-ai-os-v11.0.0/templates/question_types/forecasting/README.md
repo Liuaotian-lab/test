@@ -1,0 +1,3 @@
+# forecasting
+
+Question type template.

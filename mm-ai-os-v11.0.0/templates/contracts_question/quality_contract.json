@@ -1,0 +1,18 @@
+{
+  "question_id": "__QUESTION__",
+  "allowed_quality_levels": [
+    "global_optimal",
+    "certified_optimal",
+    "exhaustive_best",
+    "local_optimal",
+    "heuristic_feasible",
+    "evaluated_best",
+    "simulation_estimate",
+    "approximate",
+    "exploratory",
+    "failed"
+  ],
+  "default_quality_level": "exploratory",
+  "global_optimal_claim_allowed": false,
+  "certificate_required_for_global_optimal": true
+}

@@ -1,0 +1,10 @@
+{
+  "pattern_id": "heliostat_field_high_quality_pattern",
+  "applies_to": ["solar tower", "heliostat", "optical efficiency", "geometry optics"],
+  "expected_components": [
+    "solar_position_model", "mirror_normal_model", "cosine_efficiency", "atmospheric_transmittance",
+    "shadow_blocking", "truncation_efficiency", "layout_optimization", "constraint_validation", "sensitivity_analysis"
+  ],
+  "strong_methods": ["projection_shadow", "monte_carlo_ray_tracing", "concentric_ring_layout", "genetic_algorithm", "local_refinement"],
+  "weak_methods_warning": ["constant_truncation_efficiency", "no_shadow_blocking", "single_layout_family", "no_sensitivity_analysis"]
+}

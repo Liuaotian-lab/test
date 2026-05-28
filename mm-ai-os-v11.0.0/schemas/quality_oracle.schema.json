@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MM-AI OS Surrogate Quality Report",
+  "type": "object",
+  "required": ["gate", "status", "surrogate_score", "components"],
+  "properties": {
+    "gate": {"const": "quality-oracle"},
+    "status": {"enum": ["passed", "warning", "failed"]},
+    "surrogate_score": {"type": "number", "minimum": 0, "maximum": 100},
+    "confidence": {"type": "string"},
+    "decision": {"type": "string"},
+    "components": {"type": "object"}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "case_id": "__CASE_ID__",
+  "raw_data_read_only": true,
+  "path_resolver_required": true,
+  "case_escape_forbidden": true,
+  "forbidden_write_globs": [
+    "data/raw/**"
+  ],
+  "stage_output_roots": [
+    "results/**",
+    "runs/**",
+    "reports/**"
+  ]
+}

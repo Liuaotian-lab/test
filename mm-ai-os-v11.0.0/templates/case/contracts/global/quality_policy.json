@@ -1,0 +1,29 @@
+{
+  "case_id": "__CASE_ID__",
+  "quality_levels": [
+    "global_optimal",
+    "certified_optimal",
+    "exhaustive_best",
+    "local_optimal",
+    "heuristic_feasible",
+    "evaluated_best",
+    "simulation_estimate",
+    "approximate",
+    "exploratory",
+    "failed"
+  ],
+  "global_optimal_requires": [
+    "full_search_or_certificate",
+    "constraint_verification",
+    "solver_diagnostics"
+  ],
+  "heuristic_must_disclose": true,
+  "simulation_must_record": [
+    "random_seed",
+    "n_trials",
+    "mean",
+    "std",
+    "ci95_low",
+    "ci95_high"
+  ]
+}

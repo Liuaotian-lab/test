@@ -1,0 +1,33 @@
+{
+  "atom_id": "formula_evaluation",
+  "description": "problem-stated formula evaluation",
+  "required_solver_hooks": [
+    "evaluate_formula"
+  ],
+  "required_validators": [
+    "formula_consistency_validator"
+  ],
+  "required_negative_tests": [
+    "formula_term_removed",
+    "wrong_formula_coefficient"
+  ],
+  "minimum_fidelity": "L2",
+  "claim_limit": "evaluated_best",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  }
+}

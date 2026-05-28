@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Citation",
+  "type": "object",
+  "required": [
+    "title"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "doi": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "snippet": {
+      "type": "string"
+    },
+    "relevance": {
+      "type": "number"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": [
+    "status",
+    "claims",
+    "final_claims"
+  ],
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "claims": {
+      "type": "array"
+    },
+    "final_claims": {
+      "type": "array"
+    }
+  }
+}

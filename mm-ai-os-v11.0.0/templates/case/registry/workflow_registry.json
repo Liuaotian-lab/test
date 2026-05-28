@@ -1,0 +1,8 @@
+{
+  "default_stages": [
+    "validate",
+    "reduced",
+    "real",
+    "report"
+  ]
+}

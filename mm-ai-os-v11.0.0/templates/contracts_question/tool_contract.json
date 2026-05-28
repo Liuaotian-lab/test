@@ -1,0 +1,8 @@
+{
+  "question_id": "__QUESTION__",
+  "recommended_packs": [],
+  "required_imports": [],
+  "required_validators": [],
+  "preflight_commands": [],
+  "agent_bootstrap_path": null
+}

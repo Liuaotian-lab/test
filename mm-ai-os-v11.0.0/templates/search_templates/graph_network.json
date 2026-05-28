@@ -1,0 +1,26 @@
+{
+  "template_id": "graph_network",
+  "version": "7.1.0",
+  "description": "Search strategy for graph theory and network problems.",
+  "domain": "graph_network.graph_theory",
+  "search_engines": ["web_search", "web_fetch"],
+  "query_strategy": {
+    "model_search": [
+      "graph theory mathematical model nodes edges adjacency matrix",
+      "network flow optimization maximum flow minimum cut formulation",
+      "shortest path problem Dijkstra Bellman-Ford algorithm complexity",
+      "minimum spanning tree Prim Kruskal algorithm"
+    ],
+    "method_search": [
+      "network simplex algorithm implementation complexity analysis",
+      "graph traversal BFS DFS connected components algorithm",
+      "centrality measures betweenness closeness eigenvector PageRank"
+    ]
+  },
+  "authoritative_sources": [
+    "Cormen et al. Introduction to Algorithms",
+    "Ahuja Magnanti Orlin Network Flows",
+    "SIAM Journal on Discrete Mathematics",
+    "Journal of Graph Theory"
+  ]
+}

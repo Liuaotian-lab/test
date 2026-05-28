@@ -1,0 +1,5 @@
+{
+  "strong_claim_terms": ["最优", "最大", "最小", "尽量大", "尽量小", "临界", "边界", "终止", "earliest", "latest", "optimal", "maximum", "minimum", "global"],
+  "global_optimal_requires": ["global_optimality_certificate", "exhaustive_enumeration_certificate", "relaxation_bound_certificate", "dual_bound_certificate"],
+  "candidate_best_allowed_with": ["candidate_best_certificate", "candidate_search_certificate"]
+}

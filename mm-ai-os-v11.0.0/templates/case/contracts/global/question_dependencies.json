@@ -1,0 +1,9 @@
+{
+  "case_id": "__CASE_ID__",
+  "dependencies": {},
+  "rules": {
+    "downstream_read_only": true,
+    "downstream_must_not_modify_upstream": true,
+    "use_formal_outputs_only": true
+  }
+}

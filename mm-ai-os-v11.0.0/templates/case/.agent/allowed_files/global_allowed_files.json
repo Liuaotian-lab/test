@@ -1,0 +1,32 @@
+{
+  "case_id": "__CASE_ID__",
+  "default_policy": {
+    "read_allowed": [
+      "data/**",
+      "workspace/**",
+      "registry/**",
+      "contracts/**",
+      "engineering/**",
+      "results/**",
+      "evidence/**",
+      "reports/**"
+    ],
+    "write_allowed": [
+      "workspace/**",
+      "registry/**",
+      "contracts/questions/**",
+      "engineering/questions/**",
+      "results/**",
+      "runs/**",
+      "final_outputs/**",
+      "evidence/**",
+      "reports/**",
+      ".agent/**",
+      "paper/**",
+      "package/**"
+    ],
+    "write_forbidden": [
+      "data/raw/**"
+    ]
+  }
+}

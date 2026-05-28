@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EvidenceSpan",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "text"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "source_file": {
+      "type": "string"
+    },
+    "question_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "text_hash": {
+      "type": "string"
+    },
+    "start_offset": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "end_offset": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

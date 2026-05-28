@@ -1,0 +1,37 @@
+{
+  "template_id": "thermal_process",
+  "version": "7.1.0",
+  "description": "Search strategy for thermal process problems (reflow soldering, heat treatment, etc.)",
+  "domain": "physical_process.thermal_process",
+  "search_engines": ["web_search", "web_fetch"],
+  "query_strategy": {
+    "model_search": [
+      "reflow soldering thermal profile mathematical model ODE PDE",
+      "transient heat transfer moving boundary piecewise zones model",
+      "convective heat transfer coefficient temperature dependent modeling",
+      "thermal resistance network lumped capacitance model"
+    ],
+    "method_search": [
+      "thermal parameter estimation inverse problem least squares",
+      "finite difference method heat equation nonlinear boundary conditions",
+      "Runge-Kutta ODE solver thermal system simulation",
+      "piecewise linear interpolation temperature curve fitting"
+    ],
+    "optimization_search": [
+      "conveyor speed optimization reflow soldering thermal constraints",
+      "constrained nonlinear optimization SLSQP thermal process",
+      "multi-objective optimization thermal uniformity throughput"
+    ],
+    "validation_search": [
+      "thermal model validation experimental temperature measurement",
+      "thermocouple measurement uncertainty analysis",
+      "sensitivity analysis thermal model parameter variation"
+    ]
+  },
+  "authoritative_sources": [
+    "Incropera Fundamentals of Heat and Mass Transfer",
+    "Carslaw and Jaeger Conduction of Heat in Solids",
+    "ASME Journal of Heat Transfer",
+    "International Journal of Thermal Sciences"
+  ]
+}

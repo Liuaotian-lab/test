@@ -1,0 +1,35 @@
+{
+  "atom_id": "ranking_stability",
+  "description": "ranking or evaluation model stability",
+  "required_solver_hooks": [
+    "rank_alternatives",
+    "perturb_weights"
+  ],
+  "required_validators": [
+    "ranking_stability_validator",
+    "weight_sensitivity_validator"
+  ],
+  "required_negative_tests": [
+    "unstable_ranking",
+    "missing_weight_sensitivity"
+  ],
+  "minimum_fidelity": "L2",
+  "claim_limit": "evaluated_best",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  }
+}

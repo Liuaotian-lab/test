@@ -1,0 +1,15 @@
+{
+  "case_id": "__CASE_ID__",
+  "question_id": "__QUESTION__",
+  "status": "draft",
+  "minimum_competition_level": "L3",
+  "minimum_final_level": "L4",
+  "required_validators": ["domain_validator", "independent_verify", "red_team_review"],
+  "forbidden_shortcuts_for_final": ["placeholder_solver", "single_center_point_without_validation", "single_solver_high_gain_without_tournament"],
+  "quality_caps": {
+    "if_no_domain_validator": "approximate",
+    "if_no_independent_verify": "simulation_estimate",
+    "if_single_solver_only": "heuristic_feasible",
+    "if_sampling_without_convergence": "approximate"
+  }
+}

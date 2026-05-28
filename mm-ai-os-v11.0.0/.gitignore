@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local configuration and secrets
+.env
+.env.*
+secrets/
+*.key
+*.pem
+
+# Generated modeling cases and packages
+cases/*
+!cases/.gitkeep
+**/final_outputs/
+**/package/
+**/.agent/run_reports/
+**/.agent/failures/
+
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/

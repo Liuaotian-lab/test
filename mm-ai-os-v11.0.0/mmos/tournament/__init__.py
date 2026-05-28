@@ -1,0 +1,1 @@
+"""Multi-solver tournament module."""

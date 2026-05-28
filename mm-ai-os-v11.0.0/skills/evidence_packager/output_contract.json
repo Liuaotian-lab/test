@@ -1,0 +1,6 @@
+{
+  "skill_id": "evidence_packager",
+  "required_outputs": [
+    "workspace/evidence/candidate/evidence_packager_output.json"
+  ]
+}

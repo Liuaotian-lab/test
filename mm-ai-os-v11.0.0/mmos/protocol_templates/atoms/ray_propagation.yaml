@@ -1,0 +1,35 @@
+{
+  "atom_id": "ray_propagation",
+  "description": "ray, light, reflection, propagation or receiver hit tests",
+  "required_solver_hooks": [
+    "trace_rays",
+    "check_receiver_hits"
+  ],
+  "required_validators": [
+    "ray_direction_validator",
+    "receiver_intersection_validator"
+  ],
+  "required_negative_tests": [
+    "ray_detector_disabled",
+    "receiver_intersection_missed"
+  ],
+  "minimum_fidelity": "L2",
+  "claim_limit": "evaluated_best",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  }
+}

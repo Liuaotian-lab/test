@@ -1,0 +1,8 @@
+{
+  "question_id": "__QUESTION__",
+  "baseline_model": null,
+  "main_model": null,
+  "optional_enhancement_models": [],
+  "fallback_models": [],
+  "rejected_models": []
+}

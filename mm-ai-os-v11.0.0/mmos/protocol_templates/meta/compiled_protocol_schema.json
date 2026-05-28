@@ -1,0 +1,4 @@
+{
+  "required_fields": ["compiled_protocol_id", "case_id", "source_protocol", "question_contracts"],
+  "contract_required_fields": ["solver_hooks", "validators", "negative_tests", "certificate_requirements", "fidelity_requirements", "claim_limits", "output_requirements"]
+}

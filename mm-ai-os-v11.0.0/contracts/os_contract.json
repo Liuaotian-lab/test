@@ -1,0 +1,67 @@
+{
+  "schema_version": "11.0.0-dynamic-protocol-certified-modeling-stable",
+  "version": "11.0.0-dynamic-protocol-certified-modeling-stable",
+  "contract_scope": "os",
+  "primary_workflow": "understanding_gated_academic_research_to_cumcm_paper",
+  "distribution_profile": "modeling_os_stable",
+  "legacy_systems_included": false,
+  "historical_cases_included": false,
+  "required_case_contracts": [
+    "contracts/global/case_contract.json",
+    "contracts/global/path_policy.json",
+    "contracts/global/quality_policy.json",
+    "contracts/global/question_dependencies.json",
+    "contracts/global/submission_contract.json"
+  ],
+  "required_question_contracts": [
+    "problem_spec.json",
+    "variable_registry.json",
+    "objective_registry.json",
+    "constraint_registry.json",
+    "validation_contract.json",
+    "solver_budget.json",
+    "missing_information_contract.json",
+    "quality_contract.json",
+    "tool_contract.json",
+    "runtime_contract.json",
+    "output_contract.json",
+    "evidence_contract.json",
+    "report_contract.json",
+    "model_fidelity_contract.json"
+  ],
+  "required_academic_research_artifacts": [
+    "workspace/problem_signatures/official/case.signatures.json",
+    "workspace/academic_search/official/search_results.json",
+    "workspace/academic_search/official/method_matches.json",
+    "workspace/method_plan/official/case.method_plan_summary.json",
+    "workspace/method_plan/reports/coverage_gap_analysis.json"
+  ],
+  "required_gates": [
+    "understanding-gate",
+    "search-plan-gate"
+  ],
+  "compatibility": {
+    "case_contracts": "7.1-compatible",
+    "question_contracts": "7.1-compatible"
+  },
+  "control_plane_version": "7.2-compatible",
+  "schema_gate_version": "kernel-gate-hotfix",
+  "required_schema_families": [
+    "problem_understanding",
+    "academic_research",
+    "method_plan",
+    "contracts",
+    "agents",
+    "gates",
+    "workflow",
+    "artifacts"
+  ],
+  "artifact_governance_version": "candidate-official-v1",
+  "agent_output_policy": {
+    "candidate_first": true,
+    "direct_official_write_allowed": false,
+    "promotion_required_for_official_artifacts": true,
+    "legacy_flat_paths_are_compatibility_mirrors": true
+  },
+  "primary_gate": "final-gate-v2"
+}

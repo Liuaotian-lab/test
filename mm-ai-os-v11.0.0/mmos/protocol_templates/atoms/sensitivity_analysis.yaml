@@ -1,0 +1,33 @@
+{
+  "atom_id": "sensitivity_analysis",
+  "description": "parameter perturbation and robustness",
+  "required_solver_hooks": [
+    "run_sensitivity"
+  ],
+  "required_validators": [
+    "sensitivity_validator"
+  ],
+  "required_negative_tests": [
+    "missing_sensitivity",
+    "unstable_result_not_reported"
+  ],
+  "minimum_fidelity": "L2",
+  "claim_limit": "evaluated_best",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "7.4.0",
+  "workflow": "academic_research_to_cumcm_paper",
+  "rules": {
+    "use_academic_research_engine": true,
+    "legacy_capability_system_forbidden_in_formal_workflow": true,
+    "record_evidence_for_method_claims": true,
+    "do_not_fabricate_search_results": true,
+    "raw_data_read_only": true
+  },
+  "historical_cases_forbidden_in_formal_workflow": true,
+  "old_capability_packs_forbidden_in_formal_workflow": true,
+  "codename": "candidate-official-split"
+}

@@ -1,0 +1,6 @@
+{
+  "skill_id": "problem_router",
+  "required_outputs": [
+    "workspace/routing/candidate/problem_routing_proposal.json"
+  ]
+}

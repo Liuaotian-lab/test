@@ -1,0 +1,35 @@
+{
+  "schema_version": "7.4.0",
+  "case_id": "fixture_case",
+  "status": "passed",
+  "searches": [
+    {
+      "question_id": "Q1",
+      "status": "planned",
+      "queries": [
+        {
+          "query_id": "Q1.domain_model.001",
+          "query": "thermal process mathematical model",
+          "purpose": "domain_model",
+          "evidence_ids": ["EVID-Q1-0001"]
+        }
+      ],
+      "results": [
+        {
+          "source_id": "SRC-Q1-0001",
+          "title": "Thermal process modeling",
+          "query_id": "Q1.domain_model.001",
+          "snippet": "A method for heat-transfer model calibration.",
+          "identified_methods": [
+            {
+              "method_name": "heat-transfer calibration",
+              "role": "model",
+              "evidence_span": "heat-transfer model calibration",
+              "relevance_score": 0.8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

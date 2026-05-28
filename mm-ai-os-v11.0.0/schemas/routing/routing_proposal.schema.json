@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "case_id",
+    "question_id",
+    "routing_id",
+    "candidate_paradigms",
+    "requires_human_review"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "question_id": {
+      "type": "string"
+    },
+    "routing_id": {
+      "type": "string"
+    },
+    "candidate_paradigms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "paradigm",
+          "capabilities",
+          "evidence_ids",
+          "why",
+          "required_validators",
+          "claim_limits",
+          "confidence"
+        ],
+        "properties": {
+          "paradigm": {
+            "type": "string"
+          },
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "why": {
+            "type": "string"
+          },
+          "required_validators": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "claim_limits": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          }
+        }
+      }
+    },
+    "rejected_paradigms": {
+      "type": "array"
+    },
+    "requires_human_review": {
+      "type": "boolean"
+    }
+  }
+}

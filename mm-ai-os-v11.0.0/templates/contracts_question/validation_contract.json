@@ -1,0 +1,9 @@
+{
+  "case_id": "__CASE_ID__",
+  "question_id": "__QUESTION__",
+  "validators": ["schema_check", "constraint_check", "quality_claim_check"],
+  "checks": [
+    {"name": "solution_schema", "required": true},
+    {"name": "constraint_feasibility", "required": true}
+  ]
+}

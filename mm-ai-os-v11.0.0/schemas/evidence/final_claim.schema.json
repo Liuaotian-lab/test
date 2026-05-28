@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "question_id",
+    "claim",
+    "experiment_id",
+    "source_artifact",
+    "confidence",
+    "allowed_in_paper",
+    "allowed_in_abstract"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string"
+    },
+    "question_id": {
+      "type": "string"
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1
+    },
+    "experiment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_artifact": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "allowed_in_paper": {
+      "type": "boolean"
+    },
+    "allowed_in_abstract": {
+      "type": "boolean"
+    }
+  }
+}

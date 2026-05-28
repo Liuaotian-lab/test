@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ArtifactPromotionReport",
+  "type": "object",
+  "required": ["schema_version", "status", "case_id", "source", "destination", "promoted_at"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "status": {"enum": ["passed", "failed"]},
+    "case_id": {"type": "string"},
+    "source": {"type": "string"},
+    "destination": {"type": "string"},
+    "schema": {"type": ["string", "null"]},
+    "validation": {"type": ["object", "null"]},
+    "promoted_at": {"type": "string"}
+  },
+  "additionalProperties": true
+}

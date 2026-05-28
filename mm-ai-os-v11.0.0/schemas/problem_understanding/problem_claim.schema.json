@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProblemClaim",
+  "type": "object",
+  "required": [
+    "claim_type",
+    "evidence_ids"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "claim": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "claim_type": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "claim"
+      ]
+    },
+    {
+      "required": [
+        "text"
+      ]
+    }
+  ],
+  "additionalProperties": true
+}

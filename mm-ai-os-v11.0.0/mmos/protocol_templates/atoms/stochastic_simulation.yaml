@@ -1,0 +1,34 @@
+{
+  "atom_id": "stochastic_simulation",
+  "description": "random simulation and convergence",
+  "required_solver_hooks": [
+    "run_simulation"
+  ],
+  "required_validators": [
+    "seed_validator",
+    "convergence_validator"
+  ],
+  "required_negative_tests": [
+    "missing_seed",
+    "unstable_simulation"
+  ],
+  "minimum_fidelity": "L2",
+  "claim_limit": "simulation_estimate",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  }
+}

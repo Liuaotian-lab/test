@@ -1,0 +1,28 @@
+capability_id: statistics
+purpose: >
+  statistics capability protocol.
+
+required_outputs:
+  - data_dictionary
+  - assumptions
+  - estimator_definition
+  - uncertainty_report
+  - diagnostics
+
+mandatory_validators:
+  - evidence_support_check
+  - constraint_consistency_check
+  - claim_limit_check
+
+optional_validators:
+  - sensitivity_check
+  - robustness_check
+
+claim_limits:
+  - Do not claim global optimality or correctness without a matching validator or certificate.
+  - Do not use demo or synthetic fixtures as real results.
+
+common_failure_modes:
+  - Missing evidence support.
+  - Unit or schema mismatch.
+  - Overstated conclusion.

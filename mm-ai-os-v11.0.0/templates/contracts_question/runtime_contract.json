@@ -1,0 +1,13 @@
+{
+  "question_id": "__QUESTION__",
+  "stages": [
+    "validate",
+    "reduced",
+    "real",
+    "report"
+  ],
+  "entrypoint": "engineering/questions/__QUESTION__/run.py",
+  "resume_enabled": true,
+  "input_hash_required": true,
+  "output_hash_required": true
+}

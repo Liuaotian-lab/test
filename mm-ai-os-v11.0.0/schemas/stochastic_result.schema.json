@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "question_id",
+    "method",
+    "random_seed",
+    "n_trials",
+    "metric",
+    "mean",
+    "std",
+    "ci95_low",
+    "ci95_high",
+    "is_global_optimum_claimed"
+  ],
+  "properties": {
+    "question_id": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "random_seed": {
+      "type": "integer"
+    },
+    "n_trials": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "metric": {
+      "type": "string"
+    },
+    "mean": {
+      "type": "number"
+    },
+    "std": {
+      "type": "number"
+    },
+    "ci95_low": {
+      "type": "number"
+    },
+    "ci95_high": {
+      "type": "number"
+    },
+    "is_global_optimum_claimed": {
+      "type": "boolean"
+    }
+  }
+}

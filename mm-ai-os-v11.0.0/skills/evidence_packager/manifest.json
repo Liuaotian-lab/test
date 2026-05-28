@@ -1,0 +1,27 @@
+{
+  "skill_id": "evidence_packager",
+  "version": "1.0.0",
+  "purpose": "evidence_packager reusable workflow skill.",
+  "activation": {
+    "manual": true,
+    "auto_after": []
+  },
+  "context_budget": {
+    "max_files": 6,
+    "max_total_lines": 2000,
+    "load_examples": false
+  },
+  "inputs": [],
+  "allowed_write_paths": [
+    "workspace/**/candidate/*",
+    ".agent/skill_reports/*"
+  ],
+  "required_outputs": [
+    "workspace/evidence/candidate/evidence_packager_output.json"
+  ],
+  "required_gates": [
+    "schema_validate",
+    "evidence_support_check",
+    "claim_limit_check"
+  ]
+}

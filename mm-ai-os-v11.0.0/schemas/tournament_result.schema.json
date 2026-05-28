@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MM-AI OS Solver Tournament Result",
+  "type": "object",
+  "required": ["question_id", "candidates", "selected_solution"],
+  "properties": {
+    "question_id": {"type": "string"},
+    "candidates": {"type": "array"},
+    "selected_solution": {"type": "string"},
+    "selection_reason": {"type": "string"}
+  }
+}

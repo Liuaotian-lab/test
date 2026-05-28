@@ -1,0 +1,33 @@
+{
+  "skill_id": "problem_router",
+  "version": "1.0.0",
+  "purpose": "problem_router reusable workflow skill.",
+  "activation": {
+    "manual": true,
+    "auto_after": [
+      "problem_understand"
+    ]
+  },
+  "context_budget": {
+    "max_files": 6,
+    "max_total_lines": 2000,
+    "load_examples": false
+  },
+  "inputs": [
+    "workspace/problem_understanding/official/final_problem_signature.json",
+    "workspace/problem_understanding/official/evidence_index.json"
+  ],
+  "allowed_write_paths": [
+    "workspace/routing/candidate/*",
+    ".agent/run_reports/*",
+    ".agent/skill_reports/*"
+  ],
+  "required_outputs": [
+    "workspace/routing/candidate/problem_routing_proposal.json"
+  ],
+  "required_gates": [
+    "schema_validate",
+    "evidence_support_check",
+    "claim_limit_check"
+  ]
+}

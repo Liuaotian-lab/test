@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"McpPermissionCheck","type":"object","required":["schema_version","tool","allowed","reason"],"properties":{"schema_version":{"type":"string"},"tool":{"type":"string"},"target":{"type":["string","null"]},"mode":{"type":"string"},"allowed":{"type":"boolean"},"reason":{"type":"string"}},"additionalProperties":true}

@@ -1,0 +1,22 @@
+{
+  "case_id": "__CASE_ID__",
+  "version": "v5.1.0-complete-cn",
+  "status": "initialized",
+  "required_sections": [
+    "problem_understanding",
+    "data_audit",
+    "question_registry",
+    "contracts",
+    "engineering",
+    "outputs",
+    "evidence",
+    "reports"
+  ],
+  "completion_criteria": [
+    "all_required_questions_complete",
+    "required_outputs_validated",
+    "evidence_pack_created",
+    "quality_summary_created",
+    "known_limitations_disclosed"
+  ]
+}

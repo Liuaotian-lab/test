@@ -1,0 +1,8 @@
+{
+  "case_id": "__CASE_ID__",
+  "question_id": "__QUESTION__",
+  "hard_constraints": [
+    {"name": "problem_constraints", "description": "题面明确给出的硬约束，激活后必须细化", "source": "problem_statement"}
+  ],
+  "constraints": []
+}

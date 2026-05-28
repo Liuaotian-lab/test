@@ -1,0 +1,36 @@
+{
+  "atom_id": "boundary_certificate",
+  "description": "boundary, critical or terminal values",
+  "required_solver_hooks": [
+    "build_bracket"
+  ],
+  "required_validators": [
+    "bracketing_validator"
+  ],
+  "required_negative_tests": [
+    "p_minus_epsilon_missing",
+    "boundary_counterexample_missing"
+  ],
+  "minimum_fidelity": "L3",
+  "claim_limit": "certified_optimal",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  },
+  "required_certificates": [
+    "boundary_certificate"
+  ]
+}

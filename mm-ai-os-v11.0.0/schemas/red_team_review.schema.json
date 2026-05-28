@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MM-AI OS Red Team Review",
+  "type": "object",
+  "required": ["gate", "status", "findings"],
+  "properties": {
+    "gate": {"const": "red-team-review"},
+    "status": {"enum": ["passed", "warning", "failed"]},
+    "findings": {"type": "array"}
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "required": [
+    "skill_id",
+    "version",
+    "purpose",
+    "activation",
+    "context_budget",
+    "inputs",
+    "allowed_write_paths",
+    "required_outputs",
+    "required_gates"
+  ],
+  "properties": {
+    "skill_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "activation": {
+      "type": "object"
+    },
+    "context_budget": {
+      "type": "object"
+    },
+    "inputs": {
+      "type": "array"
+    },
+    "allowed_write_paths": {
+      "type": "array"
+    },
+    "required_outputs": {
+      "type": "array"
+    },
+    "required_gates": {
+      "type": "array"
+    }
+  }
+}

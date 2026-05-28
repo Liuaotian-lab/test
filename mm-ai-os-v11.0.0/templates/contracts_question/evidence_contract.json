@@ -1,0 +1,6 @@
+{
+  "question_id": "__QUESTION__",
+  "required_evidence": [],
+  "claim_to_source_required": true,
+  "hash_manifest_required": true
+}

@@ -1,0 +1,8 @@
+{
+  "case_id": "__CASE_ID__",
+  "question_id": "__QUESTION__",
+  "variables": [
+    {"name": "decision_variables", "role": "decision", "description": "待由 Agent 根据题面细化的决策变量集合"},
+    {"name": "input_data", "role": "input", "description": "题面和附件提供的数据"}
+  ]
+}

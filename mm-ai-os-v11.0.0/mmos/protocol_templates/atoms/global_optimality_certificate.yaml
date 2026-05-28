@@ -1,0 +1,36 @@
+{
+  "atom_id": "global_optimality_certificate",
+  "description": "global optimality or exact proof",
+  "required_solver_hooks": [
+    "prove_global_bound"
+  ],
+  "required_validators": [
+    "global_bound_validator"
+  ],
+  "required_negative_tests": [
+    "missing_global_bound",
+    "false_global_optimal"
+  ],
+  "minimum_fidelity": "L4",
+  "claim_limit": "global_optimal",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  },
+  "required_certificates": [
+    "global_optimality_certificate"
+  ]
+}

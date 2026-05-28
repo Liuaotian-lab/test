@@ -1,0 +1,9 @@
+{
+  "levels": {
+    "L0": {"rank": 0, "max_quality_level": "exploratory"},
+    "L1": {"rank": 1, "max_quality_level": "approximate"},
+    "L2": {"rank": 2, "max_quality_level": "evaluated_best"},
+    "L3": {"rank": 3, "max_quality_level": "certified_optimal"},
+    "L4": {"rank": 4, "max_quality_level": "global_optimal"}
+  }
+}

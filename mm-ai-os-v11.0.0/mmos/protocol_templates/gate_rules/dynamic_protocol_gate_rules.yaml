@@ -1,0 +1,4 @@
+{
+  "required_reports": ["protocol_lint_report.json", "protocol_redteam_report.json", "protocol_compile_report.json"],
+  "blocking_statuses": ["failed"]
+}

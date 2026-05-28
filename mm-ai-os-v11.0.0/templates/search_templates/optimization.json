@@ -1,0 +1,32 @@
+{
+  "template_id": "optimization",
+  "version": "7.1.0",
+  "description": "Search strategy for constrained optimization problems.",
+  "domain": "operations_research.constrained_optimization",
+  "search_engines": ["web_search", "web_fetch"],
+  "query_strategy": {
+    "model_search": [
+      "constrained optimization mathematical formulation decision variables objective function",
+      "nonlinear programming Karush-Kuhn-Tucker conditions optimality",
+      "mixed integer programming formulation mathematical model"
+    ],
+    "method_search": [
+      "SLSQP sequential least squares quadratic programming implementation",
+      "interior point method nonlinear constrained optimization algorithm",
+      "differential evolution global optimization metaheuristic",
+      "genetic algorithm constrained optimization penalty method",
+      "multi-start local search global optimization strategy"
+    ],
+    "validation_search": [
+      "optimization result verification KKT conditions check",
+      "sensitivity analysis Lagrange multipliers interpretation",
+      "baseline comparison heuristic vs exact optimization"
+    ]
+  },
+  "authoritative_sources": [
+    "Nocedal and Wright Numerical Optimization",
+    "Boyd and Vandenberghe Convex Optimization",
+    "Mathematical Programming (journal)",
+    "SIAM Journal on Optimization"
+  ]
+}

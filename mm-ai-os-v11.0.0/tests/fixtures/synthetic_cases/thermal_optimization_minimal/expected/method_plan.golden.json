@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "case_id": "synthetic_thermal_minimal",
+  "plans": {
+    "Q1": {
+      "question_id": "Q1",
+      "primary_model": {
+        "method_name": "lumped_parameter_heat_transfer_model",
+        "name": "lumped_parameter_heat_transfer_model",
+        "role": "primary_model",
+        "description": "Models device temperature as a first-order thermal process driven by heating power and loss to ambient air.",
+        "evidence_span": "Models device temperature as a first-order thermal process driven by heating power and loss to ambient air.",
+        "relevance_score": 0.94,
+        "source_title": "Lumped-parameter heat transfer models for thermal process control",
+        "source_url": "https://example.org/synthetic/thermal-lumped-model",
+        "source_snippet": "Models device temperature as a first-order thermal process driven by heating power and loss to ambient air.",
+        "source_result_index": 0,
+        "source_query": "reflow soldering thermal profile heat transfer mathematical model"
+      },
+      "alternative_models": [
+        {
+          "method_name": "nonlinear_least_squares_parameter_estimation",
+          "name": "nonlinear_least_squares_parameter_estimation",
+          "role": "model",
+          "description": "Fits thermal resistance and capacitance parameters by minimizing residual errors against observations.",
+          "evidence_span": "Fits thermal resistance and capacitance parameters by minimizing residual errors against observations.",
+          "relevance_score": 0.88,
+          "source_title": "Lumped-parameter heat transfer models for thermal process control",
+          "source_url": "https://example.org/synthetic/thermal-lumped-model",
+          "source_snippet": "Fits thermal resistance and capacitance parameters by minimizing residual errors against observations.",
+          "source_result_index": 0,
+          "source_query": "reflow soldering thermal profile heat transfer mathematical model"
+        },
+        {
+          "method_name": "grid_refined_feasible_search",
+          "name": "grid_refined_feasible_search",
+          "role": "model",
+          "description": "Uses a bounded grid to cross-check feasible control settings and provide a robust alternative model family.",
+          "evidence_span": "Uses a bounded grid to cross-check feasible control settings and provide a robust alternative model family.",
+          "relevance_score": 0.83,
+          "source_title": "Constrained numerical optimization for process parameter tuning",
+          "source_url": "https://example.org/synthetic/constrained-process-optimization",
+          "source_snippet": "Uses a bounded grid to cross-check feasible control settings and provide a robust alternative model family.",
+          "source_result_index": 1,
+          "source_query": "constrained optimization numerical methods feasibility sensitivity analysis"
+        },
+        {
+          "method_name": "piecewise_linear_response_model",
+          "name": "piecewise_linear_response_model",
+          "role": "model",
+          "description": "Provides an interpretable alternative prediction model for tournament comparison.",
+          "evidence_span": "Provides an interpretable alternative prediction model for tournament comparison.",
+          "relevance_score": 0.81,
+          "source_title": "Residual validation and sensitivity analysis for thermal prediction models",
+          "source_url": "https://example.org/synthetic/thermal-validation-sensitivity",
+          "source_snippet": "Provides an interpretable alternative prediction model for tournament comparison.",
+          "source_result_index": 2,
+          "source_query": "constraint handling mathematical modeling penalty method interior point SLSQP"
+        }
+      ],
+      "optimization_method": {
+        "method_name": "sequential_quadratic_programming",
+        "name": "sequential_quadratic_programming",
+        "role": "optimization",
+        "description": "Solves the bounded energy minimization problem while enforcing terminal temperature and maximum temperature constraints.",
+        "evidence_span": "Solves the bounded energy minimization problem while enforcing terminal temperature and maximum temperature constraints.",
+        "relevance_score": 0.91,
+        "source_title": "Constrained numerical optimization for process parameter tuning",
+        "source_url": "https://example.org/synthetic/constrained-process-optimization",
+        "source_snippet": "Solves the bounded energy minimization problem while enforcing terminal temperature and maximum temperature constraints.",
+        "source_result_index": 1,
+        "source_query": "constrained optimization numerical methods feasibility sensitivity analysis"
+      },
+      "verification_approach": {
+        "method_name": "residual_and_sensitivity_validation",
+        "name": "residual_and_sensitivity_validation",
+        "role": "verification",
+        "description": "Checks residual error, terminal-temperature agreement and parameter perturbation robustness.",
+        "evidence_span": "Checks residual error, terminal-temperature agreement and parameter perturbation robustness.",
+        "relevance_score": 0.93,
+        "source_title": "Residual validation and sensitivity analysis for thermal prediction models",
+        "source_url": "https://example.org/synthetic/thermal-validation-sensitivity",
+        "source_snippet": "Checks residual error, terminal-temperature agreement and parameter perturbation robustness.",
+        "source_result_index": 2,
+        "source_query": "constraint handling mathematical modeling penalty method interior point SLSQP"
+      },
+      "literature_references": [
+        {
+          "title": "Lumped-parameter heat transfer models for thermal process control",
+          "url": "https://example.org/synthetic/thermal-lumped-model",
+          "snippet": "Models device temperature as a first-order thermal process driven by heating power and loss to ambient air.",
+          "relevance": 0.94
+        },
+        {
+          "title": "Constrained numerical optimization for process parameter tuning",
+          "url": "https://example.org/synthetic/constrained-process-optimization",
+          "snippet": "Uses a bounded grid to cross-check feasible control settings and provide a robust alternative model family.",
+          "relevance": 0.83
+        },
+        {
+          "title": "Residual validation and sensitivity analysis for thermal prediction models",
+          "url": "https://example.org/synthetic/thermal-validation-sensitivity",
+          "snippet": "Provides an interpretable alternative prediction model for tournament comparison.",
+          "relevance": 0.81
+        }
+      ],
+      "citation_count": 3,
+      "method_count": 6
+    }
+  },
+  "uncited_claims": []
+}

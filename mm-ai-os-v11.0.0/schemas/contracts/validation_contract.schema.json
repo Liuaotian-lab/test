@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "validation_contract",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "question_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array"
+    },
+    "variables": {
+      "type": "array"
+    },
+    "objectives": {
+      "type": "array"
+    },
+    "constraints": {
+      "type": "array"
+    },
+    "outputs": {
+      "type": "array"
+    },
+    "checks": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

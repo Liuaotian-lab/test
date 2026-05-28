@@ -1,0 +1,5 @@
+{
+  "pattern_id": "competition_statistics_minimum",
+  "required_components": ["data_audit", "sample_size", "confidence_level", "hypothesis_or_interval", "uncertainty_disclosure"],
+  "recommended_components": ["bootstrap", "sensitivity_analysis", "model_assumption_check"]
+}

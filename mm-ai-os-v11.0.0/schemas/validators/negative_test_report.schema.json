@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": [
+    "status",
+    "negative_tests"
+  ],
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "negative_tests": {
+      "type": "array"
+    }
+  }
+}

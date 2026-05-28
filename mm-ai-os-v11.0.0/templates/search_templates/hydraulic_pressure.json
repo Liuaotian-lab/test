@@ -1,0 +1,31 @@
+{
+  "template_id": "hydraulic_pressure",
+  "version": "7.1.0",
+  "description": "Search strategy for hydraulic/pressure control problems.",
+  "domain": "physical_process.hydraulic_pressure_control",
+  "search_engines": ["web_search", "web_fetch"],
+  "query_strategy": {
+    "model_search": [
+      "compressible fluid flow high pressure pipe ODE model",
+      "fuel injection system pressure dynamics mathematical model",
+      "orifice flow equation discharge coefficient compressible liquid",
+      "bulk modulus pressure dependent density fuel model"
+    ],
+    "method_search": [
+      "numerical integration stiff ODE solver hydraulic system",
+      "Runge-Kutta adaptive step size pressure dynamics simulation",
+      "finite difference upwind scheme compressible flow pipe"
+    ],
+    "optimization_search": [
+      "cam profile optimization injection timing pressure stability",
+      "relief valve threshold optimization pressure overshoot control",
+      "nonlinear constrained optimization injection system parameters"
+    ]
+  },
+  "authoritative_sources": [
+    "Merritt Hydraulic Control Systems",
+    "Journal of Fluid Mechanics",
+    "SAE International Journal of Engines",
+    "International Journal of Engine Research"
+  ]
+}

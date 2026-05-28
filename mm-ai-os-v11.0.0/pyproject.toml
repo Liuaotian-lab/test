@@ -1,0 +1,46 @@
+[project]
+name = "mm-ai-os"
+version = "11.0.0"
+description = "Dynamic-protocol certified agentic modeling OS for mathematical modeling competitions"
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["mathematical-modeling", "agentic-ai", "verification", "model-fidelity", "dynamic-protocol"]
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "matplotlib",
+  "openpyxl",
+  "python-docx",
+  "pypdf",
+  "Pillow",
+  "opencv-python",
+  "pdf2image",
+  "pytesseract",
+  "jsonschema",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+  "mypy",
+]
+
+[project.scripts]
+mmos = "mmos.cli.main:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+warn_unused_ignores = false
+strict_optional = false

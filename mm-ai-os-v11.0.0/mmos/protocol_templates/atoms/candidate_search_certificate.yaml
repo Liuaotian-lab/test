@@ -1,0 +1,37 @@
+{
+  "atom_id": "candidate_search_certificate",
+  "description": "candidate-set best certificate",
+  "required_solver_hooks": [
+    "certify_candidate_best"
+  ],
+  "required_validators": [
+    "candidate_set_validator",
+    "candidate_best_validator"
+  ],
+  "required_negative_tests": [
+    "candidate_set_not_defined",
+    "better_candidate_ignored"
+  ],
+  "minimum_fidelity": "L2",
+  "claim_limit": "evaluated_best",
+  "fidelity_levels": {
+    "L0": {
+      "claim_limit": "exploratory"
+    },
+    "L1": {
+      "claim_limit": "approximate"
+    },
+    "L2": {
+      "claim_limit": "evaluated_best"
+    },
+    "L3": {
+      "claim_limit": "certified_optimal"
+    },
+    "L4": {
+      "claim_limit": "global_optimal"
+    }
+  },
+  "required_certificates": [
+    "candidate_search_certificate"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "os_name": "mm-ai-os",
+  "name": "mm-ai-os",
+  "version": "11.0.0-dynamic-protocol-certified-modeling-stable",
+  "release_channel": "stable",
+  "release_type": "dynamic_protocol_certified_modeling_stable",
+  "distribution_profile": "dynamic_protocol_certified_modeling_stable",
+  "primary_workflow": "understanding_gated_academic_research_to_cumcm_paper",
+  "formal_workflow_uses_historical_benchmarks": false,
+  "formal_workflow_uses_legacy_capability_packs": false,
+  "legacy_systems_included": false,
+  "historical_cases_included": false,
+  "included_subsystems": [
+    "search_plan_gate",
+    "understanding_gate",
+    "problem_understanding_engine",
+    "problem_signature",
+    "academic_research_engine",
+    "method_plan",
+    "contract_activation",
+    "semantic_audit",
+    "final_gate",
+    "first_prize_gate",
+    "cumcm_paper_standard",
+    "chart_digitizer",
+    "synthetic_e2e_regression",
+    "kernel_gate_hotfix",
+    "solver_verify_strict",
+    "placeholder_scan",
+    "constraint_test",
+    "stale_output_check",
+    "experiment_evidence_ledger",
+    "skills_runtime",
+    "evidence_driven_routing",
+    "validator_negative_tests",
+    "capability_protocols",
+    "context_budget_memory_compact",
+    "quality_protocol_v2",
+    "mcp_safe_tool_integration",
+    "constraint_ledger",
+    "cross_question_dependency_graph",
+    "certificate_engine",
+    "validator_adequacy",
+    "semantic_redteam_gate",
+    "independent_verification_protocol",
+    "final_gate_v2",
+    "agent_runtime_strict_prompt_protocol",
+    "dynamic_protocol_layer",
+    "capability_atom_matching",
+    "protocol_lint",
+    "protocol_redteam",
+    "protocol_compile",
+    "dynamic_validator_synthesis",
+    "dynamic_negative_test_synthesis",
+    "model_fidelity_gate",
+    "claim_limit_gate",
+    "dynamic_certificate_planning",
+    "dynamic_output_schema",
+    "heterogeneous_verification",
+    "os_self_diagnostics",
+    "final_gate_v3"
+  ],
+  "primary_gate": "final-gate-v3",
+  "submission_gate": "package-submit",
+  "academic_research_engine": {
+    "enabled": true,
+    "no_fallback_to_self_knowledge": true,
+    "mode": "planned-search-with-agent-populated-results",
+    "requires_agent_or_external_search_executor": true,
+    "requires_understanding_gate": true,
+    "requires_search_plan_gate": true,
+    "query_plan": "purpose-layered-evidence-backed"
+  },
+  "primary_understanding_gate": "understanding-gate",
+  "primary_search_plan_gate": "search-plan-gate",
+  "problem_understanding_engine": {
+    "enabled": true,
+    "mode": "agent_constrained_with_deterministic_validation",
+    "canonical_artifact": "workspace/problem_understanding/official/final_problem_signature.json",
+    "compatibility_artifact": "workspace/problem_signatures/case.signatures.json",
+    "requires_evidence_for_formal_claims": true,
+    "external_agent_candidate_file": "workspace/problem_understanding/candidate/agent_candidate_signature.json",
+    "deterministic_fallback": "heuristic_bootstrap_agent_review_required"
+  },
+  "codename": "dynamic-protocol-certified-modeling-stable",
+  "compatibility": {
+    "case_format": "7.4-compatible",
+    "cli": "backward-compatible",
+    "formal_workflow": "7.1-compatible",
+    "schema_layout": "7.3-schema-gated-v1",
+    "artifact_layout": "candidate-official-v1",
+    "synthetic_e2e": "thermal_optimization_minimal"
+  },
+  "schema_gate": {
+    "enabled": true,
+    "schema_root": "schemas/",
+    "validation_cli": [
+      "schema-list",
+      "schema-validate"
+    ],
+    "core_artifact_contracts": [
+      "problem_understanding/final_problem_signature",
+      "academic_research/search_results",
+      "method_plan/method_plan",
+      "gates/gate_result"
+    ]
+  },
+  "control_plane": {
+    "enabled": true,
+    "context_packs": "context_packs/",
+    "agent_policy_entrypoint": "AGENTS.md",
+    "cli_package": "mmos/cli/",
+    "monolithic_cli_removed": true
+  },
+  "artifact_governance": {
+    "enabled": true,
+    "layout": "candidate-official-v1",
+    "candidate_dirs": [
+      "workspace/problem_understanding/candidate",
+      "workspace/academic_search/candidate",
+      "workspace/method_plan/candidate",
+      "paper/candidate"
+    ],
+    "official_dirs": [
+      "workspace/problem_understanding/official",
+      "workspace/academic_search/official",
+      "workspace/method_plan/official",
+      "paper/official"
+    ],
+    "agent_direct_official_write_allowed": false,
+    "legacy_flat_paths_retained_as_compatibility_mirrors": true,
+    "promotion_cli": "artifact-promote"
+  },
+  "dynamic_protocol_os": {
+    "enabled": true,
+    "capability_atom_templates": "mmos/protocol_templates/atoms/",
+    "compiled_protocol_artifact": "workspace/dynamic_protocols/official/compiled_protocol.json",
+    "primary_gate": "final-gate-v3",
+    "static_meta_rules_retained": true
+  }
+}
